@@ -7,7 +7,8 @@ services.each { svc ->
                 scm {
                     git {
                         remote {
-                            url("https://github.com/<your>/${svc}.git")
+                            url("https://github.com/Kishore-SCM/${svc}.git")
+                            credentials('github')
                         }
                         branch("*/main")
                     }
